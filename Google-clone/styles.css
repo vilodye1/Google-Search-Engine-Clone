@@ -1,0 +1,296 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    width: 100vw;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* icons */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+/* buttons */
+button {
+    background: #F8F9FA;
+    border: 1px solid rgba(134, 134, 134, 0);
+    padding: 10px 16px;
+    margin: 11px 4px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button:hover {
+    border: 1px solid rgba(134, 134, 134, 0.3);
+    box-shadow: 0px 1px 2px rgba(134, 134, 134, 0.3)
+}
+
+button:active {
+    border: 1px solid rgb(87, 87, 250);
+}
+
+.search-icon {
+    color: #9d9a9a;
+}
+
+/* Top Navigation */
+#topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav a,
+.right-nav a {
+    margin: 5px 10px;
+}
+
+.apps-icon {
+    width: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Apps Menu */
+#apps {
+    position: absolute;
+    right: 20px;
+    width: 325px;
+    padding: 20px;
+    border: 1px solid rgba(134, 134, 134, 0.3);
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px rgba(134, 134, 134, 0.4);
+    display: none;
+}
+
+#apps i {
+    padding: 20px;
+}
+
+#apps i:hover {
+    background:rgb(218, 234, 255);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.fa-brands, .fa-solid {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-linkedin {
+    color: rgb(65, 65, 251);
+}
+
+.fa-github {
+    color: rgb(125, 2, 159);
+}
+
+.fa-house {
+    color: goldenrod;
+}
+
+.fa-envelope {
+    color: green;
+}
+
+/* Sign in Button */
+.signin {
+    background: #1A73E8;
+    color: #fff;
+    padding: 9px 24px;
+}
+
+.signin a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signin:hover {
+    filter: brightness(90%);
+    box-shadow: 2px 2px 3px rgba(134, 134, 134, 0.4);
+    cursor: pointer;
+}
+
+/* Google Logo */
+#logo {
+margin-bottom: 25px;
+}
+
+/* Search bar */
+
+.searchbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.searchbar {
+    border: 1px solid rgb(225, 225, 225);
+    width: 555px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.searchbar:hover {
+    box-shadow: 2px 2px 5px rgba(134, 134, 134, 0.3);
+    cursor: text;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 7px;
+    font-size: 16px;
+}
+
+.search-icon {
+    width: 15px;
+    height: 15px;
+}
+
+
+.mic-icon {
+    width: 15px;
+    height: 20px;
+}
+
+.mic-icon:hover .mic-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* form */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 400px;
+    display: flex;
+    padding: 0;
+    margin-left: -40px;
+    border: none;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* I'm Feeling Lucky */
+
+#lucky-btn a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.luckyAnimate:after {
+    text-decoration: none;
+    display: inline-block;
+    animation: shuffle 0.5s infinite;
+    content: "";
+    cursor: pointer;
+  }
+  
+  @keyframes shuffle {
+    0% {
+        content: "I'm Feeling Lucky";
+    }
+    20% {
+        content: "I'm Feeling Adventurous";
+    }
+
+    40% {
+        content: "I'm Feeling Curious";
+    }
+    60% {
+        content: "I'm Feeling Artistic";
+    }
+    80% {
+        content: "I'm Feeling Generous";
+    }
+    100% {
+        content: "I'm Feeling Hungry";
+    }
+  }
+  
+
+/* footer */
+
+.footer-links {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 900px;
+    align-items: center;
+    background: #eee;
+    padding: 15px 0px;
+}
+
+.footer-links a {
+    margin-right: 25px;
+    color: #70757A;
+}
+
+.leaf-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.center-footer {
+    position: absolute;
+}
+
+/* media queries */
